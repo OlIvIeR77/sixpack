@@ -1,0 +1,26 @@
+<header class="container">
+
+	<div id="user_nav">
+		<% if user_signed_in? %>
+			Signed in as <strong><%= current_user.username %></strong>. Not you?
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %> |
+			<%= link_to 'Edit account', edit_user_registration_path %>
+		<% else %>
+			<%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path %>
+		<% end %>
+	</div>
+
+	<div id="logo">
+		<h2><a href="/" style="color:green;">6pack</a></h2>
+	</div>
+
+</header>
+
+<hr/>
+	<section id="nav">
+		<ul>
+			<li><%= link_to "About", "#" %></li>
+			<li><%= link_to "faq", "#" %></li>
+		</ul>
+	</section>
+<hr/>

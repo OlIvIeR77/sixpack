@@ -1,0 +1,21 @@
+header.container {
+	#user_nav{
+		float: right;
+	}
+	#logo{
+		float: left;
+	}
+}
+.container{
+	padding: 20px;
+}
+
+section#nav{
+	padding: 0 30px;
+	ul{
+		li{
+			display: inline;
+			margin-left: 30px;
+		}
+	}
+}

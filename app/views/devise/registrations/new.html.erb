@@ -1,0 +1,37 @@
+
+<div class="row">
+
+	<fieldset>
+
+		<legend>Sign up</legend>
+
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+			<%= devise_error_messages! %>
+
+			<!--<div><%#= f.label :email %><br />
+			<%#= f.email_field :email, :autofocus => true, :value => @mail %></div>-->
+			<div class="large-4 large-centered  columns">
+				<div><%= f.label :username %><br />
+				<%= f.text_field :username %></div>
+			</div>
+			<div class="large-4 large-centered  columns">
+				<div><%= f.label :password %><br />
+				<%= f.password_field :password %></div>
+			</div>
+
+			<div class="large-4 large-centered  columns">
+				<div><%= f.submit "Sign up" %></div>
+			</div>
+
+		<% end %>
+		
+		<div class="large-4 large-centered  columns">
+			<%= render "devise/shared/links" %>
+		</div>
+
+
+	</fieldset>
+
+</div>
+

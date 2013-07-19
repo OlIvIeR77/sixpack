@@ -1,0 +1,13 @@
+<section class="row">
+
+	<div class="large-3 large-centered  columns">
+		<h3>hello <%= current_user.username %></h3>
+	</div>
+	<div class="large-6 large-centered  columns">
+		<h6>You logged in with <%= current_user.email %></h6>
+	</div>
+	<div class="large-6 large-centered  columns">
+		<%= current_user.inspect %>
+	</div>
+	
+</section>
