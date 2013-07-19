@@ -13,7 +13,7 @@ class RegistrationsController < Devise::RegistrationsController
     super
     #binding.pry
     #UserMailer.registration_mail(@user).deliver unless @user.invalid?
-    @user.send_mail
+    #@user.send_mail
   end
 
   def update
