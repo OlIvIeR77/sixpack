@@ -6,7 +6,7 @@ describe User do
 		@user = FactoryGirl.create(:user)
 	end
 
-	it "has a valid factory (is valid with an email a password and a username" do
+	it "has a valid factory (is valid with an email a password and a username)" do
 		@user.should be_valid
 	end
 

@@ -11,7 +11,7 @@
 				<div class="row collapse">
 					<%= form_tag "/users/sign_up", :method => :get do %>
 						<div class="small-9 columns">
-							<%= text_field_tag :email %>
+							<%= text_field_tag :email, '', :autofocus => true %>
 						</div>
 						<div class="small-3 columns">
 							<%= submit_tag "register", :id => "submitEmail", :class => "postfix radius" %>
